@@ -1,0 +1,47 @@
+body {
+  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.15;
+  font-size: 12pt;
+}
+
+h1,h2,h3 {
+  font-weight: lighter;
+  margin-bottom: 1ex;
+}
+
+h1 {
+  font-size: 36pt;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+h3 {
+  font-size: 18pt;
+}
+
+.logo {
+  height: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p, li {
+  /* width: 40em; */
+  /* max-width: 90%; */
+  text-align: justify;
+}
+
+li {
+  margin-top: 0.5ex;
+  margin-bottom: 0.5ex;
+}
+
+@media only screen and (min-width : 1024px) {
+  body {
+    width: 50em;
+    margin-left: 8em;
+    margin-right: 8em;
+  }
+}
