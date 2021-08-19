@@ -3,3 +3,12 @@ email: jonathan.giles@microsoft.com
 url: "http://java.ms"
 twitter_username: jonathangiles
 github_username:  jonathangiles
+
+defaults:
+  - 
+    scope:
+      path: ""
+    values:
+      author:
+        name: Jonathan Giles
+        email: jonathan.giles@microsoft.com

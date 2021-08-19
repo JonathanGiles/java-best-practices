@@ -38,6 +38,16 @@ li {
   margin-bottom: 0.5ex;
 }
 
+hr {
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: lightgray;
+}
+
+footer, footer a {
+  color: gray;
+}
+
 @media only screen and (min-width : 1024px) {
   body {
     width: 50em;
