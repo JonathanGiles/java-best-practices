@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,6 +13,14 @@
     <div class="logo">
       <a href="/"><img src="/assets/images/microsoft.png" alt="Microsoft" width="160px"></a>
     </div>
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.draft -%}
+    <p>
+    <strong>Note:</strong> This is a draft best practice and is subject to change.
+    </p>
+    {% endif %}
 
     {{ content }}
 

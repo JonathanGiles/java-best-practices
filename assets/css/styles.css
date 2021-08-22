@@ -1,3 +1,5 @@
+@import "github.css";
+
 body {
   font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 1.15;
@@ -46,6 +48,14 @@ hr {
 
 footer, footer a {
   color: gray;
+}
+
+div.highlighter-rouge {
+  background-color: rgb(242,242,242);
+  border-color: rgb(230,230,230);
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 10px;
 }
 
 @media only screen and (min-width : 1024px) {
