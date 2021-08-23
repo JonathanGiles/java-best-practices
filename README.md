@@ -17,12 +17,20 @@ The Microsoft Java Best Practices website is for all Java developers. The goal i
 
 ## Using Azure SDK for Java
 
+- Coming soon
+
+{% unless true %}
 {% for p in site.pages %}{% if p.azsdk -%}
 - [{{ p.azsdk.id }}]({{ p.url | relative_url }}): {{ p.title }} {% if p.draft -%}(Draft){% endif %}
 {% endif %}{% endfor %}
+{% endunless %}
 
 ## Best Practices for Java Library Developers
 
+- Coming soon
+
+{% unless true %}
 {% for p in site.pages %}{% if p.jldbp -%}
 - [{{ p.jldbp.id }}]({{ p.url | relative_url }}): {{ p.title }} {% if p.draft -%}(Draft){% endif %}
 {% endif %}{% endfor %}
+{% endunless %}

@@ -37,8 +37,14 @@
     {{ content }}
 
     <hr />
+    
     <footer>
-      <small>Developed by <a href="mailto:{{ page.author.email }}">{{ page.author.name }}</a></small>
+      <small>
+        {% unless page.url == '/' %}
+          <a href="/">java.ms</a> &nbsp;|&nbsp;
+        {% endunless %}
+        Developed by <a href="mailto:{{ page.author.email }}">{{ page.author.name }}</a>
+      </small>
     </footer>
   </body>
 </html>
