@@ -33,6 +33,7 @@ p, li {
   /* width: 40em; */
   /* max-width: 90%; */
   text-align: justify;
+  line-height: 1.3;
 }
 
 li {
@@ -50,13 +51,21 @@ footer, footer a {
   color: gray;
 }
 
+/* Multi-line code blocks */
 div.highlighter-rouge {
   background-color: rgb(242,242,242);
   border-color: rgb(230,230,230);
   border-width: 1px;
   border-style: solid;
   padding-left: 10px;
+  overflow-x: auto;
 }
+
+/* Inline code blocks */
+code.language-plaintext.highlighter-rouge {
+  color: darkred;
+}
+
 
 @media only screen and (min-width : 1024px) {
   body {
