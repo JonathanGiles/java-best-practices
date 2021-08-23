@@ -16,6 +16,18 @@
 
     <h1>{{ page.title }}</h1>
 
+
+    {% capture words %}
+      {{ page.content | number_of_words }}
+    {% endcapture %}
+    {% unless words contains "-" or page.url == '/' %}
+      <small>
+      {{ words | append: " words | " }}
+      {{ words | divided_by: 180 | append: " minute to read" }}
+      </small>
+    {% endunless %}
+
+
     {% if page.draft -%}
     <p>
     <strong>Note:</strong> This is a draft best practice and is subject to change.
