@@ -4,6 +4,8 @@ body {
   font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 1.15;
   font-size: 12pt;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 h1,h2,h3 {
