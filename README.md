@@ -15,7 +15,7 @@ The Microsoft Java Best Practices website is for all Java developers. The goal i
 - [{{ p.jbp.id }}]({{ p.url | relative_url }}): {{ p.title }} {% if p.draft -%}(Draft){% endif %}
 {% endif %}{% endfor %}
 
-## Using Azure SDK for Java
+## Java on Azure
 
 - Coming soon
 
