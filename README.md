@@ -15,16 +15,6 @@ The Microsoft Java Best Practices website is for all Java developers. The goal i
 - [{{ p.jbp.id }}]({{ p.url | relative_url }}): {{ p.title }} {% if p.draft -%}(Draft){% endif %}
 {% endif %}{% endfor %}
 
-## Java on Azure
-
-- Coming soon
-
-{% unless true %}
-{% for p in site.pages %}{% if p.azsdk -%}
-- [{{ p.azsdk.id }}]({{ p.url | relative_url }}): {{ p.title }} {% if p.draft -%}(Draft){% endif %}
-{% endif %}{% endfor %}
-{% endunless %}
-
 ## Best Practices for Java Library Developers
 
 {% for p in site.pages %}{% if p.jlbp -%}
