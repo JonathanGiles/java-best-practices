@@ -1,6 +1,6 @@
-title: Microsoft Java Best Practices
-email: jonathan.giles@microsoft.com
-url: "http://java.ms"
+title: Java Best Practices
+email: jonathan@jonathangiles.net
+url: "https://java.jonathangiles.net"
 
 defaults:
   - 
@@ -9,4 +9,4 @@ defaults:
     values:
       author:
         name: Jonathan Giles
-        email: jonathan.giles@microsoft.com
+        email: jonathan@jonathangiles.net
