@@ -6,8 +6,12 @@
     <title>{{ page.title -}}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
     <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
   </head>
   <body>
     <h1>{{ page.title }}</h1>
@@ -18,7 +22,7 @@
 
     {% unless words contains "-" or page.url == '/' %}
       {% assign minutes = words | divided_by: 180 %}
-      <small>
+      <p><small>
       {{ words | append: " words | " }}
   
       {% if minutes == 0 %}
@@ -28,14 +32,14 @@
       {% else %}
         {{ minutes }} minutes to read
       {% endif %}
-      </small>
+      </small></p>
     {% endunless %}
 
 
     {% if page.draft -%}
-    <p>
-    <strong>Note:</strong> This is a draft best practice and is subject to change.
-    </p>
+      <p>
+      {% include note.html content="This is a draft best practice and is subject to change." %}
+      </p>
     {% endif %}
 
     {{ content }}

@@ -55,10 +55,10 @@ footer, footer a {
 
 /* Multi-line code blocks */
 div.highlighter-rouge {
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9;
   border-left: 2px solid #ccc;
-  border-right: 2px solid #ccc;
-  margin: 1.5em 10px 1.5em 30px;
+  border-right: 2px solid #ccc; */
+  margin: 1.5em 10px 1.5em 10px;
   padding: 0.5em 10px;
   overflow-x: auto;
 }
@@ -97,8 +97,9 @@ table th {
 
 /* Blockquote styling */
 blockquote {
+  font-size: 12pt;
   background: #f9f9f9;
-  margin: 1.5em 10px 1.5em 30px;
+  margin: 1.5em 10px 1.5em 10px;
   padding: 0.5em 10px;
 
   border-left: 2px solid #ccc;
